@@ -42,6 +42,7 @@ public class Home extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Elliptic Curve Cryptography");
         setBounds(new java.awt.Rectangle(50, 50, 0, 0));
         setMaximumSize(new java.awt.Dimension(900, 500));
         setMinimumSize(new java.awt.Dimension(900, 500));

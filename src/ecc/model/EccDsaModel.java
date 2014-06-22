@@ -29,7 +29,7 @@ public class EccDsaModel {
 
     public void validate() throws Exception {
         BigInteger inv = new BigInteger(s2).modInverse(EllipticCurve.DEF_ORDER);
-        BigInteger u1_ = inv.multiply(new BigInteger(Utils.getMD5Checksum(file.getAbsolutePath())))
+        BigInteger u1_ = inv.multiply(new BigInteger(Utils.getMD5Checksum(file.getAbsolutePath()) ))
                 .mod(EllipticCurve.DEF_ORDER);
         BigInteger u2_ = inv.multiply(new BigInteger(s1))
                 .mod(EllipticCurve.DEF_ORDER);
